@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DXC.Ecommerce.Service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,8 @@ namespace WebApplication55.Controllers
     {
         public ActionResult Index()
         {
+            EcomRepo obj = new EcomRepo();
+            obj.GetProducts();
             return View();
         }
 
