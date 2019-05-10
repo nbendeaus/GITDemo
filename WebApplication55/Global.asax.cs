@@ -11,7 +11,7 @@ namespace WebApplication55
     public class MvcApplication : System.Web.HttpApplication
     {
         protected void Application_Start()
-        {
+        {// made some changes
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
